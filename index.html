@@ -6,20 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="scss/all.css">
 </head>
 
 <body>
     <h1>TODO LIST</h1>
     <div class="box">
-        <div class="add">
+        <div class="add  mb-1">
             <input type="text" placeholder="新增代辦事項" class="txt">
             <input type="button" value="+" class="save">
         </div>
         <div class="main">
-            <input type="button" value="全部" class="whole">
-            <input type="button" value="待完成" class="todo">
-            <input type="button" value="已完成" class="done">
+            <div class="filter">
+                <input type="button" value="全部" class="whole">
+                <input type="button" value="待完成" class="todo">
+                <input type="button" value="已完成" class="done">
+            </div>
+
             <ul class="list">
 
             </ul>
@@ -31,6 +34,7 @@
             </div>
         </div>
     </div>
+
 
     <script src="all.js"></script>
 </body>

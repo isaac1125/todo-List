@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+        margin: 0 auto;
+    background-image: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%);
+    background-repeat: no-repeat;
+    
+    font-family: 'BalooTamma2-Bold';
+    color: #333333;
+    h1{
+        font-size: 48px;
+        line-height: 82px;
+    }
+    .box{
+        margin: 0 auto 92px auto;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .add{
+            background: #FFFFFF;
+            box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+            border-radius: 10px;
+            border-radius: 10px;
+        }
+        .main{
+            height: 536px;
+            background: #FFFFFF;
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+            border-radius: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .filter{
+                display: flex;
+                justify-content: space-between;
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+    
+.mb-1{
+    margin-bottom: 8px;
+}

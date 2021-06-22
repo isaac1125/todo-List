@@ -118,6 +118,7 @@ list.addEventListener("click", function (e) {
     let num = e.target.getAttribute("data-num");
     data.splice(num, 1);
     chooseData();
+    Counter();
 })
 
 //完成代辦
