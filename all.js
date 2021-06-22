@@ -16,13 +16,13 @@ function renderData() {
     let str = "";
     data.forEach(function (item, index) {
         if (item.done == false) {
-            str += `<li><input type="checkbox" name="" id="${index}"  class="check">${item.content} <a><img
+            str += `<li><label class="container"><input type="checkbox" name="" id="${index}"  class="check"><span class="checkmark"></span></label><a class="pb-2 pt-2">${item.content}</a><img
         src="https://hexschool.github.io/js-todo/assets/cancel.jpg" data-num="${index}"
-        class="delete"></a></li>`
+        class="delete"></li>`
         } else {
-            str += `<li><input type="checkbox" name="" id="${index}"  class="check" checked>${item.content} <a><img
+            str += `<li><input type="checkbox" name="" id="${index}"  class="check" checked><a>${item.content}</a><img
         src="https://hexschool.github.io/js-todo/assets/cancel.jpg" data-num="${index}"
-        class="delete"></a></li>`
+        class="delete"></li>`
         }
     })
     list.innerHTML = str;
