@@ -70,7 +70,8 @@ body {
   margin: 0 auto;
   background-image: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%, #FFFFFF 100%, #E8E8E8 100%);
   background-repeat: no-repeat;
-  font-family: 'BalooTamma2-Bold';
+  font-family: "BalooTamma2", "NotoSansCJKtc", sans-serif;
+  font-weight: bold;
   color: #333333;
 }
 
@@ -178,6 +179,20 @@ body .box .main .list li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .box .main .list li .checkBox {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 15px;
+  border-radius: 5px 5px;
+  text-align: center;
+  border: 2px solid #333333;
 }
 
 body .box .main .list li a {
@@ -185,6 +200,12 @@ body .box .main .list li a {
   width: 392px;
   text-align: left;
   border-bottom: 1px solid #EFEFEF;
+}
+
+body .box .main .list li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 24px;
 }
 
 body .box .main .footer {
@@ -249,5 +270,23 @@ body .box .main .footer .doneClear:hover {
 
 .mb-12 {
   margin-bottom: 12px;
+}
+
+.check {
+  display: none;
+  cursor: pointer;
+}
+
+span {
+  display: none;
+}
+
+.check:checked + span {
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  color: #ffd370;
+  font-size: 20px;
 }
 /*# sourceMappingURL=all.css.map */

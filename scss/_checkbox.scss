@@ -1,0 +1,15 @@
+.check{
+    display: none;
+    cursor: pointer;
+}
+span{
+    display: none;
+}
+.check:checked + span {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    color: #ffd370;
+    font-size: 20px;
+}
